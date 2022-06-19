@@ -1,0 +1,107 @@
+//
+// Component: Modal
+//
+// ========================================================================
+
+// Variables
+// ========================================================================
+
+@modal-header-background: @modal-dialog-background;
+@modal-footer-background: @modal-dialog-background;
+
+//
+// New
+//
+
+@modal-header-border-width: @global-border-width;
+@modal-header-border: @global-border;
+
+@modal-footer-border-width: @global-border-width;
+@modal-footer-border: @global-border;
+
+@modal-close-full-padding: @global-margin;
+@modal-close-full-background: @modal-dialog-background;
+
+// Component
+// ========================================================================
+
+.hook-modal() {
+}
+
+// Dialog
+// ========================================================================
+
+.hook-modal-dialog() {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+// Full
+// ========================================================================
+
+.hook-modal-full() {
+}
+
+// Sections
+// ========================================================================
+
+.hook-modal-header() {
+  // border-bottom: @modal-header-border-width solid @modal-header-border;
+  box-shadow: 0px 4px 8px rgba(0, 51, 102, 0.05);
+}
+
+.hook-modal-body() {
+  @media (max-width: @breakpoint-small-max) {
+    padding: 20px;
+  }
+  @media (max-width: @breakpoint-xsmall-max) {
+    padding: 20px;
+  }
+}
+
+.hook-modal-footer() {
+  border-top: @modal-footer-border-width solid @modal-footer-border;
+}
+
+// Title
+// ========================================================================
+
+.hook-modal-title() {
+}
+
+// Close
+// ========================================================================
+
+.hook-modal-close() {
+}
+
+.hook-modal-close-hover() {
+}
+
+.hook-modal-close-default() {
+}
+
+.hook-modal-close-default-hover() {
+}
+
+.hook-modal-close-outside() {
+}
+
+.hook-modal-close-outside-hover() {
+}
+
+.hook-modal-close-full() {
+  top: 0;
+  right: 0;
+  padding: @modal-close-full-padding;
+  background: @modal-close-full-background;
+}
+
+.hook-modal-close-full-hover() {
+}
+
+// Miscellaneous
+// ========================================================================
+
+.hook-modal-misc() {
+}
